@@ -1,7 +1,7 @@
 def user_input():
     while True:
-        number = input("Number:\n")
-        if number.isdigit() > 0:
+        number = input("Number: ")
+        if number.isdigit() and int(number) > 0:
             return int(number)
         else:
             continue
