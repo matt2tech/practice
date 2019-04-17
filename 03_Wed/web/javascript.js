@@ -1,7 +1,7 @@
-var one = document.getElementById("stringOne").value;
-var two = document.getElementById("stringTwo").value;
-
 document.getElementById("btn").addEventListener("click", function() {
+    var one = document.getElementById("stringOne").value;
+    var two = document.getElementById("stringTwo").value;
+
     document.getElementById("resultOne").innerText = string;
     var num = Math.min(one.length, two.length);
     var string = "";
