@@ -2,9 +2,9 @@ document.getElementById("btn").addEventListener("click", function() {
     var one = document.getElementById("stringOne").value;
     var two = document.getElementById("stringTwo").value;
 
-    document.getElementById("resultTwo").innerText = string;
     var num = Math.min(one.length, two.length);
     var string = "";
+    document.getElementById("resultTwo").innerText = string;
     var x = 0
 
     while(x < num) {
