@@ -1,16 +1,5 @@
 def split_bill(food, allergy, pay):
-    total = 0
-    i = 0
-
-    while i < len(food):
-        if food[i] != food[int(allergy)]:
-            total += food[i]
-        else:
-            i += 1
-            continue
-        i += 1
-
-    print("\nGive back:\n{}".format(int(pay) - (total / 2)))
+    print(int(pay) - ((sum(food) - food[int(allergy)]) / 2))
 
 
 def main():
